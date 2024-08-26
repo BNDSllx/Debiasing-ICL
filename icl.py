@@ -117,7 +117,8 @@ class ICL:
             else:
                 top_k_id = sorted(score_list, key=lambda x: x[0], reverse=True)[:top_k]
             top_k_list = [item[1] for item in top_k_id]
-        return top_k_list
+            
+        return top_k_list[0]
 
     def inference(self, save_path):
         """
